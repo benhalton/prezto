@@ -75,3 +75,17 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
+
+#custom
+export PLAY_HOME=/Users/benhalton/tools/play-2.2.0
+export MONGO_HOME=/tools/mongodb-osx-x86_64-2.4.8
+export SCALA_HOME=/Users/benhalton/tools/scala-2.10.2
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+export M2_HOME=/usr/local/opt/maven/libexec
+export MAVEN_OPTS=-"Xmx512m -XX:MaxPermSize=128m"
+export TOOLS_HOME="/Users/benhalton/tools"
+
+export PATH="$M2_HOME/bin:$PATH:$GRADLE_HOME/bin:$PLAY_HOME:$MONGO_HOME/bin:$SCALA_HOME/bin:$HOME/.node/bin:$TOOLS_HOME/activator-1.0.10"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

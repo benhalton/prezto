@@ -9,5 +9,11 @@
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
-
 # Customize to your needs...
+alias dev="cd /Users/benhalton/dev/projects"
+alias gomongo="cd $MONGO_HOME"
+alias tools="cd /Users/benhalton/tools/"
+alias ll="ls -laG"
+alias gst="git status"
+alias gca="git commit -a -m"
+alias editpath="vim ~/.zprofile"
