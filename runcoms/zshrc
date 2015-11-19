@@ -20,4 +20,5 @@ alias editpath="vim ~/.zprofile"
 alias undolastcommit="git reset --soft HEAD~1"
 alias whereisjava="ll `which java`"
 alias addalias="vim ~/.zprezto/runcoms/zshrc"
+alias reloadpath="source ~/.zprofile"
 
