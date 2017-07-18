@@ -32,10 +32,11 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt' \
   'git' \
-  'node' \
-  'history-substring-search'
+  'homebrew' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'prompt'
 
 #
 # Editor
