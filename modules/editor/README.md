@@ -20,6 +20,13 @@ To enable the auto conversion of .... to ../.., add the following to
 
     zstyle ':prezto:module:editor' dot-expansion 'yes'
 
+### PS Context
+
+To enable the prompt context to be set, add the following to your
+*zpreztorc*.
+
+    zstyle ':prezto:module:editor' ps-context 'yes'
+
 Theming
 -------
 
@@ -50,6 +57,21 @@ To indicate when the editor is completing, add the following to your
 
 Then add `$editor_info[context]`, where context is *keymap*, *insert*, or
 *overwrite*, to `$PROMPT` or `$RPROMPT`.
+
+Convenience Functions
+---------------------
+
+### bindkey-all
+
+Provides a function `bindkey-all` which can be useful for checking how all of the
+keys are bound. Normal `bindkey` command will only list the keys bound for one
+keymap, which is not as useful if you want to grep through the output. The
+keymap's names go to stderr so when you grep through bindkey-all's output you
+will still see the headings and can tell which keymap each binding goes to.
+
+It will also pass through arguments so you can use bindkey-all to set bindings
+for all keymaps at once. If provided arguments it will *not* print out the
+names of each of the keymaps, and just run the command fear each keymap.
 
 Authors
 -------
